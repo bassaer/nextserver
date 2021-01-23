@@ -4,6 +4,7 @@
     "module": "esnext",
     "strict": true,
     "esModuleInterop": true,
+    "outDir": "./dist",
     "lib": [
       "dom",
       "dom.iterable",
@@ -22,6 +23,7 @@
     "node_modules"
   ],
   "include": [
+    "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
   ]
