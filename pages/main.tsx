@@ -1,4 +1,5 @@
 import { NextPageContext } from 'next';
+import Link from 'next/link';
 import { parse } from 'url';
 import { log } from '../src/logger';
 
@@ -10,8 +11,9 @@ const Main = (props: Props) => {
   log('[Main]')
   return (
     <div>
-      <p>Main Page</p>
-      data: {props.data}
+      <h1>Main Page</h1>
+      <Link href='/about'>About</Link>
+      <p>data: {props.data}</p>
     </div>
   );
 }
