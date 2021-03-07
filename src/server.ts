@@ -11,6 +11,10 @@ nextApp.prepare().then(() => {
 
   app.use(mogan('short'));
 
+  app.use('/about', (req, res, next) => {
+    return nextApp.render(req, res, '/about');
+  });
+
   app.use('/main', (req, res, next) => {
     return nextApp.render(req, res, '/main');
   });
